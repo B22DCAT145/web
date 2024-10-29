@@ -1,0 +1,48 @@
+.products-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.product-item img {
+    object-fit: cover;
+}
+
+.product-item {
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0a58ca;
+}
+
+.button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+
+/* giỏ hàng */
+
+.cart-section button {
+    position: relative;
+}
+
+.cart-section span.absolute {
+    text-align: right;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

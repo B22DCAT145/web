@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        OOP GROUP SIX Fruits
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- Link đến file CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white">
+    <header class="bg-green-600 text-white py-2">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="header-icons flex space-x-4">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="flex space-x-4">
+                <span>5:30 - 22:30</span>
+                <span>HOTLINE: 036 3050 329</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <div class="flex items-center space-x-4">
+                <img alt="OOP GROUP 6 logo" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/TGNLWJwaG6owO9Jz9oMqkYpPt2sTuyYIeRF15PdZXKLZXzzJA.jpg" width="100" />
+                <span class="text-2xl font-bold text-green-600">OOP GROUP 6 Fruits</span>
+                <span class="text-sm text-green-600">good fruit, good life</span>
+            </div>
+            <ul class="nav-links flex space-x-6 text-lg font-bold">
+                <li><a class="hover:text-yellow-600" href="#">SẢN PHẨM</a></li>
+                <li><a class="hover:text-yellow-600" href="#">TIN TỨC</a></li>
+                <li><a class="hover:text-yellow-600" href="#">MÙA TRÁI CÂY THẾ GIỚI</a></li>
+                <li><a class="hover:text-yellow-600" href="#">GIỚI THIỆU</a></li>
+                <li><a class="hover:text-yellow-600" href="#">LIÊN HỆ</a></li>
+            </ul>
+            <div class="search-bar flex items-center space-x-2">
+                <select class="border border-gray-300 rounded px-2 py-1">
+                    <option>All</option>
+                </select>
+                <input class="border border-gray-300 rounded px-2 py-1" placeholder="Tìm kiếm sản phẩm" type="text" />
+                <button class="bg-red-600 text-white px-4 py-1 rounded">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Thêm giỏ hàng bên dưới thanh tìm kiếm -->
+        <div class="cart-section mt-4 flex justify-center">
+            <button class="flex items-center bg-green-600 text-white px-4 py-2 rounded-lg relative">
+                <i class="fas fa-shopping-cart text-2xl"></i>
+                <span class="ml-2">Giỏ hàng</span>
+                <!-- Hiển thị số lượng sản phẩm trong giỏ hàng -->
+                <span class="absolute top-0 right-0 bg-red-600 text-white rounded-full px-2 py-1 text-xs font-bold">
+                0
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-4">
+        <div class="relative flex justify-center items-center">
+            <img src="image/anh1.jpg" alt="Hình ảnh" />
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+            </div>
+        </div>
+
+        <div class="info-section grid grid-cols-4 gap-4 mt-8">
+            <div class="text-center">
+                <div class="bg-green-100 p-4 rounded-full inline-block">
+                    <i class="fas fa-truck text-green-600 text-4xl"></i>
+                </div>
+                <h2 class="text-xl font-bold mt-2">GIAO HÀNG</h2>
+                <p>Tận nơi - Thanh toán tại nhà</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-green-100 p-4 rounded-full inline-block">
+                    <i class="fas fa-leaf text-green-600 text-4xl"></i>
+                </div>
+                <h2 class="text-xl font-bold mt-2">SẢN PHẨM</h2>
+                <p>Cam kết 100% nguồn gốc xuất xứ rõ ràng</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-green-100 p-4 rounded-full inline-block">
+                    <i class="fas fa-tags text-green-600 text-4xl"></i>
+                </div>
+                <h2 class="text-xl font-bold mt-2">KHUYẾN MÃI</h2>
+                <p>Luôn luôn có các chương trình khuyến mãi</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-green-100 p-4 rounded-full inline-block">
+                    <i class="fas fa-phone text-green-600 text-4xl"></i>
+                </div>
+                <h2 class="text-xl font-bold mt-2">HỖ TRỢ</h2>
+                <p>Hotline: 086.255.2155</p>
+            </div>
+        </div>
+        <div class="bg-green-600 text-white text-center py-4 mt-8">
+            <h2 class="text-2xl font-bold">SẢN PHẨM BÁN CHẠY NHẤT</h2>
+        </div>
+        <div class="products-section grid grid-cols-4 gap-6 mt-6">
+            <!-- Sản phẩm 1 -->
+            <div class="product-item text-center border rounded-lg p-4">
+                <img src="image/xoai cat loc.jpg" alt="Xoài Cát Hòa Lộc" class="rounded-lg w-full h-48 object-cover" />
+                <h3 class="mt-4 text-lg font-bold">Xoài Cát Hòa Lộc</h3>
+                <p class="text-green-600 font-semibold">150,000 đ/kg</p>
+                <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="product-item text-center border rounded-lg p-4">
+                <img src="image/kiwi.jpg" alt="Kiwi Vàng" class="rounded-lg w-full h-48 object-cover" />
+                <h3 class="mt-4 text-lg font-bold">Kiwi Vàng</h3>
+                <p class="text-green-600 font-semibold">220,000 đ/kg</p>
+                <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="product-item text-center border rounded-lg p-4">
+                <img src="image/nho sua han quoc.jpg" alt="Nho Sữa Hàn Quốc" class="rounded-lg w-full h-48 object-cover" />
+                <h3 class="mt-4 text-lg font-bold">Nho Sữa Hàn Quốc</h3>
+                <p class="text-green-600 font-semibold">700,000 đ/kg</p>
+                <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">THÊM VÀO GIỎ HÀNG</button>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="product-item text-center border rounded-lg p-4">
+                <img src="image/viet quat.jpg" alt="Việt Quất" class="rounded-lg w-full h-48 object-cover" />
+                <h3 class="mt-4 text-lg font-bold">Việt Quất</h3>
+                <p class="text-green-600 font-semibold">200,000 đ/hộp</p>
+                <button class="bg-gray-600 text-white px-4 py-2 rounded mt-2 cursor-not-allowed" disabled>HẾT HÀNG</button>
+            </div>
+        </div>
+        <!-- Phần đánh giá khách hàng -->
+        <div class="bg-green-600 text-white text-center py-4 mt-8">
+            <h2 class="text-2xl font-bold">KHÁCH HÀNG NÓI VỀ OOP GROUP 6 FRUITS</h2>
+        </div>
+        <div class="customer-reviews grid grid-cols-3 gap-6 mt-6">
+            <!-- Đánh giá 1 -->
+            <div class="review-item text-center border rounded-lg p-4">
+                <img src="image/Mẹ.jpg" alt="Cô Kim Ngân" class="rounded-full w-24 h-24 mx-auto object-cover" />
+                <h3 class="mt-4 text-lg font-bold">Cô Nguyễn Thị Lê</h3>
+                <p class="text-sm font-light">Nội trợ</p>
+                <div class="text-yellow-500 mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 mt-2">
+                    "Cô hay đi lễ chùa nên phải mua hoa quả thường xuyên. OOP GROUP 6 FRUITS luôn đáp ứng được tiêu chí của cô về chất lượng và mẫu mã."
+                </p>
+            </div>
+
+            <!-- Đánh giá 2 -->
+            <div class="review-item text-center border rounded-lg p-4">
+                <img src="image/Linh.jpg" alt="Chị Huyền My" class="rounded-full w-24 h-24 mx-auto object-cover" />
+                <h3 class="mt-4 text-lg font-bold">Chị Nguyễn Ánh Linh</h3>
+                <p class="text-sm font-light">Nhân viên văn phòng</p>
+                <div class="text-yellow-500 mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 mt-2">
+                    "Tôi rất hài lòng khi mua hàng tại OOP GROUP 6 FRUITS. Hoa quả luôn tươi mới, chất lượng chuẩn. Dịch vụ giao hàng cũng rất nhanh chóng."
+                </p>
+            </div>
+
+            <!-- Đánh giá 3 -->
+            <div class="review-item text-center border rounded-lg p-4">
+                <img src="image/Bố.jpg" alt="Anh Tuấn Anh" class="rounded-full w-24 h-24 mx-auto object-cover" />
+                <h3 class="mt-4 text-lg font-bold">Anh Nguyễn Toàn Thành</h3>
+                <p class="text-sm font-light">Phó GD cty</p>
+                <div class="text-yellow-500 mb-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 mt-2">
+                    "Cách mix quà tại OOP GROUP 6 FRUITS vô cùng độc đáo, sáng tạo. Tôi luôn chọn Thủy Anh làm quà tặng cho đối tác của mình. Chúc shop ngày càng phát triển."
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer class="bg-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-4">
+                <a class="text-gray-600" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-gray-600" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-gray-600" href="#">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a class="text-gray-600" href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="mt-4">
+                <p>OOP GROUP 6 FRUITS</p>
+                <p>0123 456 789</p>
+                <p><a class="text-green-600" href="https://oopgroup6fruits.com">https://oopgroup6fruits.com</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
